@@ -1,4 +1,5 @@
 git checkout is effectively used to switch branches.
+short-cut:  git checkout -b branch_name
 
 git reset basically resets the repo, throwing away some changes. It’s somewhat difficult to understand, so reading the examples in the documentation may be a bit more useful.
 

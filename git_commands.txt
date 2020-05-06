@@ -1,7 +1,7 @@
 
 git delete branch:  git branch -d branch_name
 git branch - to check for the current branch
-
+to check all the info in log even merges:  git log --graph --oneline
 Merging the branches: git merge branch_name
 Types of merges: 1.fastforward 2.threeway merge
 

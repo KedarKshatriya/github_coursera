@@ -1,3 +1,4 @@
+git branch - to check for the current branch
 git checkout is effectively used to switch branches.
 short-cut:  git checkout -b branch_name
 

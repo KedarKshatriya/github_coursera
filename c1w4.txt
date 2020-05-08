@@ -1,0 +1,33 @@
+Pull request Merges:
+https://help.github.com/en/articles/about-pull-request-merges
+
+git push -f
+>>git push with the -f flag forcibly replaces the old commits with the new one and forces Git to push the current snapshot to the repo as it is. This can be dangerous as it can lead to remote changes being permanently lost and is not recommended unless you're pushing fixes to your own fork (nobody else is using it) such as in the case after doing interactive rebasing to squash multiple commits into one as demonstrated.
+
+Check out the following links for more information on code reviews:
+http://google.github.io/styleguide/
+https://help.github.com/en/articles/about-pull-request-reviews
+https://medium.com/osedea/the-perfect-code-review-process-845e6ba5c31
+https://smartbear.com/learn/code-review/what-is-code-review/
+
+Check out the following links for more information on continious integration:
+https://arp242.net/diy.html 
+https://help.github.com/en/articles/closing-issues-using-keywords
+https://help.github.com/en/articles/setting-guidelines-for-repository-contributors 
+https://www.infoworld.com/article/3271126/what-is-cicd-continuous-integration-and-continuous-delivery-explained.html
+https://stackify.com/what-is-cicd-whats-important-and-how-to-get-it-right/
+https://docs.travis-ci.com/user/tutorial/
+https://docs.travis-ci.com/user/build-stages/
+
+
+In terms of source control, you're "downstream" when you copy (clone, checkout, etc) from a repository. Information is flowed "downstream" to you.
+
+When you make changes, you usually want to send them back "upstream" so they make it into that repository so that everyone pulling from the same source is working with all the same changes. This is mostly a social issue of how everyone can coordinate their work rather than a technical requirement of source control. You want to get your changes into the main project so you're not tracking divergent lines of development.
+
+Setting the upstream for a fork you have created using the following command:
+
+git remote add upstream https://github.com/[git-username]/it-cert-automation-practice.git
+
+To verify the new upstream repository you've specified for your fork, type git remote -v again. You should see the URL for your fork as origin, and the URL for the original repository as upstream.
+
+git remote -v

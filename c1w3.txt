@@ -1,0 +1,47 @@
+Cloning a repo:  
+>>git clone URL
+
+Git uses a username to associate commits with an identity. 
+It does this by using the git config command. 
+
+Set Git username with the following command:
+>>git config --global user.name "Name"
+
+Set Git email with the following command:
+>>git config --global user.email "user@example.com"
+
+Push changes to remote branch:
+>>git push origin master
+
+Pull changes from remote branch:
+>>git pull origin master
+
+
+git clone URL => Git clone is used to clone a remote repository into a local workspace
+git push	=> Git push is used to push commits from your local repo to a remote repo
+git pull	=> Git pull is used to fetch the newest updates from a remote repository
+
+This can be useful for keeping your local workspace up to date:
+https://help.github.com/en/articles/caching-your-github-password-in-git
+https://help.github.com/en/articles/generating-an-ssh-key  
+
+
+
+git remote 	=> Lists remote repos
+git remote -v	=> List remote repos verbosely
+git remote show <name>	=> Describes a single remote repo
+git remote update	=> Fetches the most up-to-date objects
+git fetch	=> Downloads specific objects
+git branch -r	=> Lists remote branches; can be combined with other branch arguments to manage remote branches
+
+
+Merge conflicts are not uncommon when working in a team of developers, or on Open Source Software. 
+Fortunately, GitHub has some good documentation on how to handle them when they happen:
+https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/about-merge-conflicts
+https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/resolving-a-merge-conflict-using-the-command-line
+
+You can also use git rebase branchname to change the base of the current branch to be branchname
+The git rebase command is a lot more powerful.
+  
+Check out this link for more information:
+https://git-scm.com/book/en/v2/Git-Tools-Rewriting-History
